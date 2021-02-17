@@ -1,0 +1,21 @@
+body {
+    background: black;
+    padding:0;
+    margin:0;
+    
+}
+
+div.hero {
+    background-image: url(pics/japon-parque.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-position: center;
+    opacity: .5;
+}
+
+h1 {
+    color: white;
+}
