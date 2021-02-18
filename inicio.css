@@ -1,21 +1,56 @@
+@font-face {
+    font-family: atkinson;
+    src: url(fonts/atkinson/Atkinson-Hyperlegible-Regular-102.ttf);
+}
 body {
-    background: black;
     padding:0;
     margin:0;
+    font-family: "atkinson", sans-serif;
     
 }
 
-div.hero {
+.hero {
     background-image: url(pics/japon-parque.jpg);
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
     height:100vh;
-    background-position: center;
-    opacity: .5;
+    position:relative;
+    background-position: center;   
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,.70);
+}
 h1 {
     color: white;
+    position: relative;
+    opacity:1;
+}
+
+a {
+    position:relative;
+    color:whitesmoke;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+    padding:10px 40px;
+    font-size: 15px;
+    border-radius: 5%;
+}
+
+a:hover {
+    border: 1px solid rgb(128, 50, 50);
+    margin: 10px;
+    padding: 11px 41px;
+    font-size: 16px;
+    color:rgb(128, 50, 50);
+    border-radius: 5%;
 }
