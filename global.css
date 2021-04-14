@@ -1,67 +1,112 @@
-@font-face {
-  font-family: atkinson;
-  src: url(fonts/atkinson/Atkinson-Hyperlegible-Regular-102.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", Sans sans-serif;
 }
 
 :root {
-  --texto: #262638;
-  --acento: #c51f5d;
-  --fondo: #ffffff;
-  --acento2: #2d2d44;
+  --fondo: #fff;
+  --primario: rgb(41, 136, 214);
+  --secundario: rgb(39, 88, 37);
+  --opuFondo: #000;
+  --trans: 0.6s;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: atkinson;
-  display: flex;
-  flex-direction: column;
-  margin: 0%;
-
-  color: var(--texto);
+  min-height: 200vh;
   background: var(--fondo);
 }
 
-div.flex {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*width: 100%;*/
-  height: 100vh;
-}
-div.flexRow {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  /*width: 100%;*/
-  height: 100vh;
-}
-
-div.invertido {
-  background-color: var(--texto);
-  color: var(--fondo);
-}
-
-div.flex p {
-  width: 66%;
-}
-
-
-i.tema {
+header {
   position: fixed;
-  bottom: 20vh;
-  right: 5vw;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  background: var(--acento);
-  color: var(--fondo);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  transition: var(--trans);
+  z-index: 9;
 }
 
-body.dark {
-  --texto: #f5f5f5;
-  --acento: #c51f5d;
-  --fondo: #243447;
-  --acento2: #141d26;
+header > .logo {
+  /* position: relative; */
+  font-weight: bold;
+  color: var(--fondo);
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  transition: var(--trans);
+  z-index: 9;
+}
+
+header > ul {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > ul > li {
+  list-style: none;
+  /* position: relative; */
+}
+
+header > ul > li > a {
+  /* position: relative; */
+  text-decoration: none;
+  color: var(--fondo);
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 20px;
+  transition: var(--trans);
+}
+
+header.sticky {
+  padding: 10px 100px;
+  background: var(--fondo);
+}
+
+header.sticky * {
+  color: var(--primario);
+}
+h1 {
+  font-size: 3rem;
+  /* position: relative; */
+  text-align: center;
+  z-index: 5;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(pics/lasfiPlaya.JPEG);
+  background-size: cover;
+  background-position: center;
+  color: var(--fondo);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.26);
 }
