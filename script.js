@@ -3,6 +3,7 @@
 let btnIdioma = document.getElementById("btn-idioma");
 let btnTema = document.getElementById("btn-tema");
 let idiomaActual = "español";
+let idioma = 0; // 0 para espanol y 1 para ingles;
 let temaActual = "claro";
 
 //sticky header
@@ -13,7 +14,11 @@ window.addEventListener("scroll", () => {
 
 //idioma
 btnIdioma.addEventListener("click", () => {
-  idiomaActual == "english" ? tradEsp() : tradEng();
+  if (idioma == 0) {
+    tradEng();
+  } else if (idioma == 1) {
+    tradEsp();
+  }
 });
 
 //tema
@@ -33,26 +38,29 @@ function aclarar() {
   document.body.classList.toggle("oscuro");
 }
 
-let textoEsp = {
-  contacto: "Contáctame",
-  saludo: "Saludos",
-};
-
-let textoEng = {
-  contacto: " Contact me ",
-  saludo: "Greetings",
-};
-
 function tradEsp() {
-  document.querySelector("#contacto").textContent = textoEsp.contacto;
-  document.querySelector("#saludo").textContent = textoEsp.saludo;
+  let keys = Object.keys(texto);
+  console.log("leer keys del objeto", keys);
+  keys.forEach((codigo) => {
+    document.getElementById(codigo).textContent = texto[codigo][0];
+  });
+
   btnIdioma.textContent = "🌮";
-  idiomaActual = "español";
+  idioma = 0;
 }
 
 function tradEng() {
-  document.querySelector("#contacto").textContent = textoEng.contacto;
-  document.querySelector("#saludo").textContent = textoEng.saludo;
+  let keys = Object.keys(texto);
+  console.log("leer keys del objeto", keys);
+  keys.forEach((codigo) => {
+    document.getElementById(codigo).textContent = texto[codigo][1];
+  });
+
   btnIdioma.textContent = "🍔";
-  idiomaActual = "english";
+  idioma = 1;
 }
+
+let texto = {
+  contacto: ["Contáctame", "Contact me"],
+  saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
+};
