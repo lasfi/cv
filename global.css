@@ -28,6 +28,13 @@ body {
   background: var(--fondo);
 }
 
+body.oscuro {
+  --fondo: #000;
+  --primario: rgb(41, 136, 214);
+  --secundario: rgb(39, 88, 37);
+  --opuFondo: #fff;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -44,7 +51,7 @@ header {
 header > .logo {
   /* position: relative; */
   font-weight: bold;
-  color: var(--fondo);
+  color: var(--primario);
   text-decoration: none;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -67,7 +74,7 @@ header > ul > li {
 header > ul > li > a {
   /* position: relative; */
   text-decoration: none;
-  color: var(--fondo);
+  color: var(--primario);
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 20px;
@@ -96,12 +103,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(pics/lasfiPlaya.JPEG);
+  /* background-image: url(pics/lasfiPlaya.JPEG);
   background-size: cover;
-  background-position: center;
-  color: var(--fondo);
+  background-position: center; */
+  color: var(--opuFondo);
 }
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -109,4 +116,4 @@ h1 {
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.26);
-}
+} */
