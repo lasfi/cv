@@ -6,10 +6,11 @@ let idiomaActual = "español";
 let idioma = 0; // 0 para espanol y 1 para ingles;
 let temaActual = "claro";
 
-//sticky header
+//sticky header mostrar
 window.addEventListener("scroll", () => {
   let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 50);
+  // header.classList.toggle("sticky", window.scrollY > 500);
+  header.classList.remove("display", window.scrollY > 500);
 });
 
 //idioma

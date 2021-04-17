@@ -10,14 +10,22 @@
 }
 
 :root {
+  /* clasicos */
   --fondo: #fff;
-  --primario: rgb(41, 136, 214);
-  --secundario: rgb(39, 88, 37);
   --opuFondo: #000;
+  /* botones */
+  --primario: #2988d6;
+  --secundario: rgb(39, 88, 37);
   --destacado: rgb(250, 155, 91);
-  --trans: 0.6s;
+  /* texto */
+  --textoPrin: black;
+  --textoSecun: black;
+  --parrafos: black;
+  /* misc */
   scroll-behavior: smooth;
+
   scroll-padding-top: 1.5rem;
+  --trans: 0.6s;
 }
 
 html {
@@ -31,11 +39,21 @@ body {
 }
 
 body.oscuro {
-  --fondo: #000;
+  /* clasicos */
+  --fondo: #0a192f;
+  --opuFondo: #ccd6f6;
+  /* botones */
   --primario: rgb(41, 136, 214);
   --secundario: rgb(39, 88, 37);
   --destacado: rgb(235, 77, 77);
-  --opuFondo: #fff;
+  /* texto */
+  --textoPrin: #ccd6f6;
+  --textoSecun: #8892b0;
+  --parrafos: #a8b2d1;
+}
+
+#header {
+  display: none;
 }
 
 header {
@@ -46,9 +64,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  padding: 25px 100px 10px 100px;
   transition: var(--trans);
   z-index: 9;
+  background: var(--fondo);
 }
 
 header > .logo {
@@ -87,6 +106,10 @@ header > ul > li > a {
 header.sticky {
   padding: 10px 100px;
   background: var(--fondo);
+}
+
+header.display {
+  display: none;
 }
 
 header.sticky * {
@@ -137,6 +160,20 @@ button {
   transition: ease-out 0.3s;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.herosup {
+  display: flex;
+  align-items: center;
+}
+
+.foto {
+  width: 50%;
+}
+
 .btn-prime {
   background: var(--primario);
   border: none;
@@ -152,3 +189,23 @@ button {
   border: 1px solid var(--opuFondo);
   color: var(--opuFondo);
 }
+
+.curve {
+  background-color: var(--primario);
+  text-align: center;
+}
+
+.curve p {
+  margin: 0px 5rem;
+}
+
+.curve svg {
+  display: block;
+}
+
+.curve.upper {
+  background: white;
+}
+
+/* 
+wenas wenas  */
