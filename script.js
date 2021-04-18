@@ -5,12 +5,35 @@ let btnTema = document.getElementById("btn-tema");
 let idiomaActual = "español";
 let idioma = 0; // 0 para espanol y 1 para ingles;
 let temaActual = "claro";
+let texto = {
+  contacto: ["Contáctame", "Contact me"],
+  saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
+  hook: [
+    "Soy desarrollador de páginas y aplicaciones web",
+    "I am a front-end web developer",
+  ],
+};
+
+const getLanguage = () =>
+  navigator.userLanguage ||
+  (navigator.languages &&
+    navigator.languages.length &&
+    navigator.languages[0]) ||
+  navigator.language ||
+  navigator.browserLanguage ||
+  navigator.systemLanguage;
+var idiomaUsuario = getLanguage().slice(0, 2);
+
+//traducir automaticamente
+if (idiomaUsuario === "en") {
+  tradEng();
+}
 
 //sticky header mostrar
 window.addEventListener("scroll", () => {
   let header = document.querySelector("header");
   // header.classList.toggle("sticky", window.scrollY > 500);
-  header.classList.remove("display", window.scrollY > 500);
+  header.classList.toggle("display", window.scrollY > 1000);
 });
 
 //idioma
@@ -60,8 +83,3 @@ function tradEng() {
   btnIdioma.textContent = "🍔";
   idioma = 1;
 }
-
-let texto = {
-  contacto: ["Contáctame", "Contact me"],
-  saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
-};
