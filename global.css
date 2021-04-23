@@ -24,7 +24,7 @@
   /* misc */
   scroll-behavior: smooth;
 
-  scroll-padding-top: 1.5rem;
+  scroll-padding-top: 2.5rem;
   --trans: 0.6s;
 }
 
@@ -43,7 +43,7 @@ body.oscuro {
   --fondo: #0a192f;
   --opuFondo: #ccd6f6;
   /* botones */
-  --primario: #fff;
+  --primario: rgb(245, 142, 142);
   --secundario: #ccd6f6;
   --destacado: rgb(203, 253, 218);
   /* texto */
@@ -130,7 +130,7 @@ h3 {
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -204,9 +204,10 @@ img {
   display: block;
 }
 
-.curve.upper {
+/* .curve.upper {
   background: var(--fondo);
-}
+  
+} */
 
 p#acerca {
   margin-left: auto;
@@ -248,3 +249,59 @@ p#acerca {
     height: 2rem;
   }
 }
+
+.motas {
+  /* z-index: -1; */
+  background-color: var(--fondo);
+
+  background-image: radial-gradient(
+      hsla(238, 13%, 53%, 0.87) 1.5px,
+      transparent 1.5px
+    ),
+    radial-gradient(hsla(238, 13%, 53%, 0.87) 1.5px, var(--fondo) 1.5px);
+  background-size: 100px 100px;
+  background-position: 0 0, 40px 40px;
+}
+
+.animado {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+  border: 3px solid red;
+  /* overflow: hidden; */
+}
+
+.img-hero {
+  animation: cereal linear 3s infinite;
+}
+
+@keyframes cereal {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768) {
+  #btn-cv {
+    display: none;
+  }
+} ;
+
+@media screen and (max-width: 400) {
+  #contacto {
+    display: none;
+  }
+} ;
