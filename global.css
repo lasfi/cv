@@ -293,15 +293,24 @@ p#acerca {
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 33px 10px 33px;
+  }
 
-@media screen and (max-width: 768) {
-  #btn-cv {
+  header > .logo {
+    /* position: relative; */
+
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+  li:nth-child(3) {
     display: none;
   }
-} ;
+}
 
-@media screen and (max-width: 400) {
-  #contacto {
+@media screen and (max-width: 500px) {
+  li:nth-child(4) {
     display: none;
   }
 } ;
