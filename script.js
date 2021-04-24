@@ -10,8 +10,9 @@ let texto = {
   saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
   hook: [
     "Soy desarrollador de páginas y aplicaciones web",
-    "I am a front-end web developer",
+    "I am a front-end web & app developer",
   ],
+  acerca: ["Wenas noshes", "Good night"],
 };
 
 const getLanguage = () =>
@@ -32,8 +33,7 @@ if (idiomaUsuario === "en") {
 //sticky header mostrar
 window.addEventListener("scroll", () => {
   let header = document.querySelector("header");
-  // header.classList.toggle("sticky", window.scrollY > 500);
-  header.classList.toggle("display", window.scrollY > 1000);
+  header.classList.remove("invisible", window.scrollY > 50);
 });
 
 //idioma

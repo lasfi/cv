@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasfi.to</title>
     <link rel="stylesheet" href="global.css" />
+    <script
+      src="https://kit.fontawesome.com/d47931d1b4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="display">
+    <header class="invisible">
       <a href="#" class="logo">Lasfi.to</a>
       <ul>
         <li><a id="btn-tema" href="#">🌙</a></li>
@@ -17,51 +21,45 @@
         <li><a id="contacto" href="#">Contáctame</a></li>
       </ul>
     </header>
-    <section class="herosup motas">
-      <section class="hero">
-        <h3 id="saludo">¡Hola, me dicen lasfito!</h3>
-        <h1 id="hook">
-          Soy <strong>desarrollador</strong> de páginas y aplicaciones
-          <strong>web</strong>
-        </h1>
-        <div class="botones-intro">
-          <a href="#mancha"><button class="btn-prime">Acerca</button></a>
-          <button class="btn-hueco">Proyectos</button>
-        </div>
+    <section class="hero-wrapper">
+      <section class="hero-up">
+        <section class="hero-copy">
+          <h3 id="saludo" class="saludo">¡Hola, me dicen lasfito!</h3>
+          <h1 id="hook">
+            Soy <strong>desarrollador</strong> de páginas y aplicaciones
+            <strong>web</strong>
+          </h1>
+
+          <a href="#acerca"><i class="fas fa-chevron-circle-down"></i></a>
+        </section>
+        <section class="hero-foto">
+          <img
+            class="img-hero"
+            src="pics/gotMilk.png"
+            alt="Cartoon drawing of myself"
+          />
+        </section>
       </section>
-      <section class="foto">
-        <img class="img-hero" src="pics/gotMilk.png" alt="Cartoon drawing of myself" />
-      </section>
+
+      <div class="hero-olas"></div>
     </section>
-    <div id="mancha" class="curve motas">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-        <path
-          fill="var(--secundario)"
-          fill-opacity="1"
-          d="M0,128L40,133.3C80,139,160,149,240,138.7C320,128,400,96,480,96C560,96,640,128,720,165.3C800,203,880,245,960,256C1040,267,1120,245,1200,224C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
-    <div class="curve">
+    <div class="acerca">
       <p id="acerca">
-        Desarrollador web con 1 año de experencia en front-end (HTML, CSS, JavaScript) y apasionado del diseño UI. Perseverante, curioso y mexicano 100% 😎 
-        <ul class="ver-cv">
-          <li><a href=""><button class="btn-prime-jr"> Proyectos</button></a></li>
-          <li> <a href=""> <button class="btn-hueco-jr"> ver cv</button></a>
-          </li>
-        </ul>
+        <!-- Desarrollador web con 1 año de experencia en front-end (HTML, CSS,
+        JavaScript) y apasionado del diseño UI. Perseverante, curioso y mexicano
+        100% 😎 -->
+        Wenas noshes, mushashos
       </p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-        <path
-          fill="var(--fondo)"
-          fill-opacity="1"
-          d="M0,128L40,133.3C80,139,160,149,240,138.7C320,128,400,96,480,96C560,96,640,128,720,165.3C800,203,880,245,960,256C1040,267,1120,245,1200,224C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
+      <ul class="ver-cv">
+        <li>
+          <a href=""><button class="btn btn-hueco">Proyectos</button></a>
+        </li>
+        <li>
+          <a href=""> <button class="btn btn-hueco">ver cv</button></a>
+        </li>
+      </ul>
     </div>
-<!-- 
-    separador -->
-  
+
     <script src="script.js"></script>
   </body>
 </html>
