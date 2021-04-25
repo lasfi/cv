@@ -45,9 +45,9 @@ body.oscuro {
   --fondo: #0a192f;
   --opuFondo: rgb(203, 213, 246);
   /* botones */
-  --primario: hsl(0, 82%, 62%);
+  --primario: hsl(226, 70%, 88%);
   --secundario: #cbd5f6;
-  --destacado: rgb(203, 253, 218);
+  --destacado: hsl(0, 82%, 62%);
   /* texto */
   --textoPrin: hsl(226, 70%, 88%);
   --textoSecun: #8892b0;
@@ -171,6 +171,7 @@ header.invisible {
   align-items: center;
   justify-content: flex-end;
   width: 66%;
+  color: var(--textoPrin);
 }
 
 .saludo {
@@ -275,6 +276,105 @@ btn {
   color: var(--opuFondo);
 }
 
+/* PROYECTOS */
+
+.proyectos {
+  display: flex;
+  justify-content: center;
+}
+
+.carta {
+  position: relative;
+  justify-content: center;
+  width: 600px;
+  height: 350px;
+  background-color: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.carta > .circulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carta > .circulo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primario);
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.carta:hover > .circulo::before {
+  clip-path: circle(400px at center);
+  background-color: var(--secundario);
+  border-radius: 10px;
+}
+
+.carta > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: auto;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.carta:hover img {
+  left: 75%;
+  height: 500px;
+}
+
+.carta > .contenido {
+  position: absolute;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  align-content: left;
+}
+
+.carta:hover > .contenido {
+  left: 0%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.carta > .contenido > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.carta > .contenido > p {
+  color: #fff;
+}
+
+.carta > .contenido > a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  margin: top 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+/* Animaciones  */
+
 @keyframes icono {
   0% {
     transform: translateY(0);
@@ -329,6 +429,8 @@ btn {
   }
 }
 
+/* mediaqueriessss */
+
 @media screen and (max-width: 1024px) {
   .hero-up {
     flex-direction: column-reverse;
@@ -336,9 +438,19 @@ btn {
   .hero-foto {
     margin-top: 2rem;
   }
+  html {
+    font-size: 14px;
+  }
+  .proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
   li:nth-child(3) {
     display: none;
   }
@@ -353,6 +465,9 @@ btn {
 }
 
 @media screen and (max-width: 568px) {
+  html {
+    font-size: 12px;
+  }
   li:nth-child(4) {
     display: none;
   }
@@ -363,5 +478,28 @@ btn {
   header > .logo {
     font-size: 1.5rem;
     letter-spacing: 1.5px;
+  }
+}
+
+/* TARJETAS PROYECTOS */
+
+@media screen and (max-width: 991px) {
+  .carta {
+    max-width: 350px;
+    align-items: flex-start;
+  }
+
+  .carta:hover {
+    height: 600px;
+  }
+  .carta .contenido {
+    width: 100%;
+    left: 0%;
+    padding: 30px;
+  }
+  .carta:hover img {
+    top: 70%;
+    left: 50%;
+    height: 300px;
   }
 }
