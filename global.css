@@ -141,9 +141,8 @@ header > ul > li > a {
 }
 
 header.invisible {
-  display: none;
+  visibility: hidden;
 }
-
 /* Herou */
 .hero-wrapper {
   /* background-color: var(--fondo); */
@@ -373,6 +372,59 @@ btn {
   display: inline-block;
   text-decoration: none;
 }
+
+/* PROYECTOS CAR */
+
+.swiper-container {
+  width: 100%;
+  height: 66vh;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: grab;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--fondo);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.proy1 {
+  background: linear-gradient(
+    -45deg,
+    var(--destacado),
+    var(--primario),
+    var(--secundario)
+  );
+  background-size: 400% 400%;
+  animation: fondo 10s ease-in-out infinite;
+}
+
+.proy2 {
+  background: linear-gradient(
+    -45deg,
+    var(--opuFondo),
+    var(--primario),
+    var(--fondo)
+  );
+  background-size: 400% 400%;
+  animation: fondo 10s ease-in-out infinite;
+}
+
 /* Animaciones  */
 
 @keyframes icono {
@@ -426,6 +478,18 @@ btn {
   }
   100% {
     background-position-x: 0;
+  }
+}
+
+@keyframes fondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
