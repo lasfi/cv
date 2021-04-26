@@ -40,18 +40,20 @@ html {
 }
 
 :root {
-  --primario: #2988d6;
-  --hermano: #85b2d7;
-  --acento: #f55357;
+  --primario: hsl(207, 68%, 50%);
+  --hermano: hsl(207, 51%, 68%);
+  --acento: hsl(359, 89%, 64%);
 
-  --fondo: #fff;
-  --textostr: #000;
-  --textosft: #151a1e;
+  --fondo: hsl(0, 0%, 100%);
+  --fondojr: hsl(0, 0%, 97%);
+  --textostr: hsl(0, 0%, 10%);
+  --textosft: hsl(0, 0%, 25%);
 
   /* misc */
   --ola: url(pics/oladay.png);
   /* --ola-color: # */
   --ola-color: var(--hermano);
+  --sombras: rgba(0, 0, 0, 0.4);
   --trans: 1s;
 
   scroll-padding-top: 2.5rem;
@@ -65,16 +67,22 @@ body {
 }
 
 body.oscuro {
-  --primario: #f55357;
-  --hermano: hsl(359, 49%, 49%);
-  --acento: #0c73b8;
+  --primario: hsl(207, 68%, 40%);
+  --hermano: hsl(207, 51%, 58%);
+  --acento: hsl(359, 59%, 64%);
 
-  --fondo: #0c131a;
-  --textostr: #cbd5f6;
-  --textosft: #a8b2d1;
+  --fondo: hsl(205, 31%, 12%);
+  --fondojr: hsl(205, 21%, 17%);
+  --textostr: hsl(0, 0%, 95%);
+  --textosft: hsl(0, 0%, 85%);
 
   --ola: url("pics/olanight.png");
+  --sombras: rgba(0, 0, 0, 0.678);
   --ola-color: #cbd5f6;
+}
+
+body.oscuro img {
+  filter: brightness(0.85) contrast(1.1);
 }
 
 img {
@@ -152,12 +160,14 @@ header > .logo {
 }
 
 header > ul > li {
-  margin: 0px 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
 }
 
 header > ul > li > a {
   text-decoration: none;
-  color: var(--textosft);
+  color: var(--textostr);
   letter-spacing: 1px;
 }
 
@@ -196,7 +206,7 @@ header.invisible {
   align-items: center;
   justify-content: flex-end;
   width: 66%;
-  color: var(--textosft);
+  color: var(--textostr);
 }
 
 .saludo {
@@ -318,11 +328,15 @@ header.invisible {
   height: 100vh;
 }
 
-.proyectos-wrapper > h2 {
+.proyectos-wrapper h2 {
   margin: 10px 5px;
   font-size: 6.25rem;
   font-weight: bold;
-  background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background-image: linear-gradient(
+    90deg,
+    var(--primario) 0%,
+    var(--acento) 100%
+  );
   background-size: 400% 400%;
   animation: fondo 5s linear infinite;
   background-clip: text;
@@ -331,7 +345,7 @@ header.invisible {
 }
 
 .swiper-container {
-  width: 80vw;
+  width: clamp(300px, 95vw, 2500px);
   height: 75vh;
   margin-left: auto;
   margin-right: auto;
@@ -344,9 +358,8 @@ header.invisible {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
 
-  border: 1px solid black;
+  /* nota, slide mismo tama;o que el container, css ajeno en link */
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -364,7 +377,7 @@ header.invisible {
 }
 
 .swiper-slide img {
-  height: 50%;
+  height: 25%;
   width: auto;
 }
 
@@ -383,6 +396,62 @@ header.invisible {
   width: 12rem;
   height: 3rem;
   transition: ease-out 0.3s;
+}
+
+.container-proyectos {
+  flex: 1 1 auto;
+  margin: 3rem auto;
+  padding: 10px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.screen-body-item-jr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-body-item-jr img {
+  max-width: 80%;
+  height: auto;
+}
+
+.screen-proyectos {
+  position: relative;
+  background: var(--fondojr);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.screen-body-proyectos {
+  display: flex;
+  border-bottom: 0.5px solid var(--textosft);
+  border-left: 0.5px solid var(--textosft);
+  border-right: 0.5px solid var(--textosft);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.screen-proyectos:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px var(--sombras);
+  z-index: -1;
+}
+
+.screen-body-item h3 {
+  color: var(--textostr);
+}
+.screen-body-item p {
+  color: var(--textosft);
 }
 
 /* CONTACTO */
@@ -421,7 +490,7 @@ header.invisible {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: var(--textosft);
+  background: var(--primario);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -453,6 +522,10 @@ header.invisible {
 .screen-header-right {
   display: flex;
 }
+
+/* .prueba2 {
+  width: 800px;
+} */
 
 .screen-header-ellipsis {
   width: 3px;
@@ -671,6 +744,10 @@ header.invisible {
   header > .logo {
     font-size: 1.75rem;
     letter-spacing: 1.75px;
+  }
+
+  .screen-body-proyectos {
+    flex-direction: column;
   }
 }
 
