@@ -1,0 +1,138 @@
+/* PROYECTOS CAR */
+.proyectos-wrapper {
+  height: 100vh;
+}
+
+.proyectos-wrapper h2 {
+  margin: 10px 5px;
+  font-size: 6.25rem;
+  font-weight: bold;
+  background-image: linear-gradient(
+    90deg,
+    var(--primario) 0%,
+    var(--acento) 100%
+  );
+  background-size: 400% 400%;
+  animation: fondo 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.swiper-container {
+  width: clamp(300px, 95vw, 2500px);
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: grab;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  /* nota, slide mismo tama;o que el container, css ajeno en link */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  height: 25%;
+  width: auto;
+}
+
+.swiper-slide p {
+  max-width: 70ch;
+}
+.btn-slide {
+  display: flex;
+}
+
+.btn-sm {
+  cursor: pointer;
+  margin: 5px 7px;
+  font-size: 1.25rem;
+  outline: none;
+  width: 12rem;
+  height: 3rem;
+  transition: ease-out 0.3s;
+}
+
+.container-proyectos {
+  flex: 1 1 auto;
+  margin: 3rem auto;
+  padding: 10px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.screen-body-item-jr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-body-item-jr img {
+  max-width: 80%;
+  height: auto;
+}
+
+.screen-proyectos {
+  position: relative;
+  background: var(--fondojr);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.screen-body-proyectos {
+  display: flex;
+  border-bottom: 0.5px solid var(--textosft);
+  border-left: 0.5px solid var(--textosft);
+  border-right: 0.5px solid var(--textosft);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.screen-proyectos:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px var(--sombras);
+  z-index: -1;
+}
+
+.screen-body-item h3 {
+  color: var(--textostr);
+}
+.screen-body-item p {
+  color: var(--textosft);
+}
+
+body.oscuro .swiper-pagination * {
+  background-color: white;
+}
+
+/* body.oscuro .swiper-button-next {
+  color: var(--textosft);
+} */

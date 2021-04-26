@@ -1,0 +1,99 @@
+/* HEROU*/
+
+.hero-wrapper {
+  /* background-color: var(--fondo); */
+  position: relative;
+  height: 100vh;
+}
+
+.fondo-pts {
+  background-image: radial-gradient(
+      hsla(238, 13%, 53%, 0.87) 1.5px,
+      transparent 1.5px
+    ),
+    radial-gradient(hsla(238, 13%, 53%, 0.87) 1.5px, var(--fondo) 1.5px);
+  background-size: 100px 100px;
+  background-position: 0 0, 40px 40px;
+}
+
+.hero-up {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hero-copy {
+  /* flex: 2 1.5 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 66%;
+  color: var(--textostr);
+}
+
+.saludo {
+  color: var(--primario);
+  font-weight: 300;
+}
+
+.hero-foto {
+  /* flex: 1 1 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+.hero-foto img {
+  animation: cereal linear 3s infinite;
+}
+
+.fa-chevron-circle-down {
+  color: var(--primario);
+  font-size: 3.25rem;
+  animation: icono linear 3s infinite;
+  z-index: 2;
+}
+
+.fa-chevron-circle-down:hover {
+  color: var(--acento);
+  animation: none;
+}
+
+.hero-olas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 143px;
+  width: 100%;
+  background-image: var(--ola);
+
+  animation: ola linear 10s infinite;
+}
+
+.hero-olas::before {
+  content: "";
+  opacity: 0.66;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 143px;
+  width: 100%;
+  background-image: var(--ola);
+
+  animation: ola-jr linear 10s infinite;
+}
+
+.hero-olas::after {
+  content: "";
+  opacity: 0.33;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 143px;
+  width: 100%;
+  background-image: var(--ola);
+
+  animation: ola linear 20s infinite;
+}

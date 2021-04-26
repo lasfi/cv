@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasfi.to</title>
-
+    <!--COMIENZAN ESTILOS-->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/hero.css" />
+    <link rel="stylesheet" href="./style/acerca.css" />
+    <link rel="stylesheet" href="./style/proyectos.css" />
+    <link rel="stylesheet" href="./style/contacto.css" />
+    <link rel="stylesheet" href="./style/medias.css" />
+
+    <!--TERMINAN ESTILOS-->
     <script
       src="https://kit.fontawesome.com/d47931d1b4.js"
       crossorigin="anonymous"
@@ -36,7 +44,7 @@
             <strong>web</strong>
           </h1>
 
-          <a href="#acerca"><i class="fas fa-chevron-circle-down"></i></a>
+          <a href="#acerca-top"><i class="fas fa-chevron-circle-down"></i></a>
         </section>
         <section class="hero-foto">
           <img
@@ -47,28 +55,59 @@
         </section>
       </section>
 
-      <div class="hero-olas"></div>
+      <div class="hero-olas" id="acerca-top"></div>
     </section>
 
     <!--ACERCA-->
 
     <div class="acerca">
-      <p id="acerca">
-        <!-- Desarrollador web con 1 año de experencia en front-end (HTML, CSS,
-        JavaScript) y apasionado del diseño UI. Perseverante, curioso y mexicano
-        100% 😎 -->
-        Wenas noshes, mushashos
-      </p>
-      <ul class="ver-cv">
-        <li>
-          <a href="#proyectos"
-            ><button class="btn-bg btn-hueco">Proyectos</button></a
-          >
-        </li>
-        <li>
-          <a href=""> <button class="btn-bg btn-hueco">ver cv</button></a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-center">Acerca de mi</div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span id="contact-titulo">Escríbeme</span>
+              </div>
+              <div class="app-contact" id="contact-info">Info: hi@lasfi.to</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    class="app-form-control"
+                    placeholder="Luis Adrian"
+                    value=""
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="hi@lasfi.to" />
+                </div>
+
+                <div class="app-form-group message">
+                  <p>Mensaje</p>
+                  <input class="app-form-control" placeholder="Hi" />
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ola-abajo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">

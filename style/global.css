@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "atkinson";
+  src: url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Regular-102.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "atkinson";
+  src: url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Bold-102.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "atkinson";
+  src: url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Italic-102.woff);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "atkinson";
+  src: url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-BoldItalic-102.woff);
+  font-weight: bold;
+  font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "atkinson", sans-serif;
+  font-size: 16px;
+  cursor: url("../material/avion32x32.png"), auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --primario: hsl(207, 68%, 50%);
+  --hermano: hsl(207, 51%, 68%);
+  --acento: hsl(359, 89%, 64%);
+
+  --fondo: hsl(0, 0%, 100%);
+  --fondojr: hsl(0, 0%, 97%);
+  --textostr: hsl(0, 0%, 10%);
+  --textosft: hsl(0, 0%, 25%);
+
+  /* misc */
+  --ola: url(../pics/oladay.png);
+  /* --ola-color: # */
+  --ola-color: var(--hermano);
+  --sombras: rgba(0, 0, 0, 0.4);
+  --trans: 1s;
+
+  scroll-padding-top: 2.5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  min-height: 200vh;
+}
+
+body.oscuro {
+  --primario: hsl(207, 68%, 40%);
+  --hermano: hsl(207, 51%, 58%);
+  --acento: hsl(359, 59%, 64%);
+
+  --fondo: hsl(205, 31%, 12%);
+  --fondojr: hsl(205, 21%, 17%);
+  --textostr: hsl(0, 0%, 95%);
+  --textosft: hsl(0, 0%, 85%);
+
+  --ola: url("../pics/olanight.png");
+  --sombras: rgba(0, 0, 0, 0.678);
+  --ola-color: #cbd5f6;
+}
+
+body.oscuro img {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px 10px;
+  font-size: 1.5rem;
+  outline: none;
+  width: 15rem;
+  height: 3rem;
+  transition: ease-out 0.3s;
+}
+
+/* Tipografía  */
+
+h1,
+h2,
+h3,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+  margin: 3rem 0;
+}
+
+h2,
+h3 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}

@@ -1,0 +1,57 @@
+/* Acerca */
+
+.acerca {
+  background: var(--ola-color);
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.acerca p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40ch;
+  letter-spacing: 2px;
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+  padding-top: 10rem;
+  color: var(--fondo);
+  border: 1px solid var(--fondo);
+  padding: 1rem;
+}
+.ver-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3rem 0 3rem 0; */
+}
+
+/* .ola-abajo {
+    margin-top: 0px;
+    padding-top: 0;
+  } */
+
+.btn-bg {
+  cursor: pointer;
+  margin: 5px 10px;
+  font-size: 1.5rem;
+  outline: none;
+  width: 15rem;
+  height: 3rem;
+  transition: ease-out 0.3s;
+}
+
+.btn-prime {
+  background: var(--acento);
+  border: 1px solid var(--textostr);
+  color: var(--textostr);
+}
+
+.btn-hueco {
+  background: none;
+  border: 1px solid var(--textostr);
+  color: hsl(0, 0%, 10%);
+}
