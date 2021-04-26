@@ -1,0 +1,97 @@
+/* PROYECTOS */
+
+.proyectos {
+  display: flex;
+  justify-content: center;
+}
+
+.carta {
+  position: relative;
+  justify-content: center;
+  width: 600px;
+  height: 350px;
+  background-color: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.carta > .circulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carta > .circulo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primario);
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.carta:hover > .circulo::before {
+  clip-path: circle(400px at center);
+  background-color: var(--hermano);
+  border-radius: 10px;
+}
+
+.carta > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: auto;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.carta:hover img {
+  left: 75%;
+  height: 500px;
+}
+
+.carta > .contenido {
+  position: absolute;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  align-content: left;
+}
+
+.carta:hover > .contenido {
+  left: 0%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.carta > .contenido > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.carta > .contenido > p {
+  color: #fff;
+}
+
+.carta > .contenido > a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  margin: top 1rem;
+  display: inline-block;
+  text-decoration: none;
+}

@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasfi.to</title>
-    <link rel="stylesheet" href="global.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="global.css" />
     <script
       src="https://kit.fontawesome.com/d47931d1b4.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="fondo-pts">
     <header class="invisible">
       <a href="#" class="logo">Lasfi.to</a>
       <ul>
         <li><a id="btn-tema" href="#">🌙</a></li>
         <li><a id="btn-idioma" href="#">🍔</a></li>
-        <li><a id="btn-cv" href="#">CV</a></li>
-        <li><a id="contacto" href="#">Contáctame</a></li>
+        <li><a id="btn-cv" href="./material/cvesp.pdf">CV</a></li>
+        <li><a id="contacto" href="#contact-form">Contáctame</a></li>
       </ul>
     </header>
     <section class="hero-wrapper">
@@ -47,6 +48,9 @@
 
       <div class="hero-olas"></div>
     </section>
+
+    <!--ACERCA-->
+
     <div class="acerca">
       <p id="acerca">
         <!-- Desarrollador web con 1 año de experencia en front-end (HTML, CSS,
@@ -56,71 +60,159 @@
       </p>
       <ul class="ver-cv">
         <li>
-          <a href=""><button class="btn btn-hueco">Proyectos</button></a>
+          <a href="#proyectos"
+            ><button class="btn-bg btn-hueco">Proyectos</button></a
+          >
         </li>
         <li>
-          <a href=""> <button class="btn btn-hueco">ver cv</button></a>
+          <a href=""> <button class="btn-bg btn-hueco">ver cv</button></a>
         </li>
       </ul>
     </div>
-    <h2 class="proyectos">Proyectos</h2>
-    <section class="proyectos">
-      <!-- proyecto 1 -->
-
-      <div class="carta">
-        <div class="circulo"></div>
-        <div class="contenido">
-          <h2>Proyecto 1</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-            voluptas, perferendis eius iure, mollitia aut quisquam vero sed
-            accusamus adipisci consequuntur tempora iusto et debitis dolor
-          </p>
-          <a href="">Visitar</a>
-        </div>
-        <img src="/pics/gotMilk.png" alt="Got milk?" />
-      </div>
-      <!-- proyecto 2 -->
-      <div class="carta">
-        <div class="circulo"></div>
-        <div class="contenido">
-          <h2>Proyecto 2</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-            voluptas, perferendis eius iure, mollitia aut quisquam vero sed
-            accusamus adipisci consequuntur tempora iusto et debitis dolor
-          </p>
-          <a href="">Visitar</a>
-        </div>
-        <img src="/pics/gotMilk.png" alt="Got milk?" />
-      </div>
-    </section>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quas
-      dicta soluta iste harum exercitationem numquam fugit delectus in
-      blanditiis, reiciendis nemo quia beatae facere aliquid commodi distinctio
-      eos mollitia quos deleniti possimus iusto. Vel nesciunt veritatis nobis
-      voluptatum animi laborum. Earum labore rerum sapiente, placeat illum
-      officia excepturi veritatis.
-    </p>
-
-    <!--PROYECTOS-->
-
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide proy1">Proyecto 1</div>
-        <div class="swiper-slide proy2">Proyecto 2</div>
-        <div class="swiper-slide">Proyecto 3</div>
-        <div class="swiper-slide">Proyecto 4</div>
-        <div class="swiper-slide">Proyecto 5</div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    <div class="ola-abajo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <path
+          fill="var(--ola-color)"
+          fill-opacity="1"
+          d="M0,128L80,106.7C160,85,320,43,480,53.3C640,64,800,128,960,170.7C1120,213,1280,235,1360,245.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
     </div>
 
+    <!--PROYECTOS-->
+    <section class="proyectos-wrapper">
+      <h2 id="proyectos">Proyectos</h2>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide proy1">
+            <img src="./pics/japon-parque.jpg" alt="" />
+            <h3>Proyecto 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quos exercitationem id rerum dolorum et. Repellat,
+              optio. Tenetur, excepturi consectetur.
+            </p>
+            <div class="btn-slide">
+              <button class="btn-sm btn-prime">Visitar</button>
+              <button class="btn-sm btn-hueco">Código</button>
+            </div>
+          </div>
+          <div class="swiper-slide proy1">
+            <img src="./pics/japon-parque.jpg" alt="" />
+            <h3>Proyecto 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quos exercitationem id rerum dolorum et. Repellat,
+              optio. Tenetur, excepturi consectetur.
+            </p>
+            <div class="btn-slide">
+              <button class="btn-sm btn-prime">Visitar</button>
+              <button class="btn-sm btn-hueco">Código</button>
+            </div>
+          </div>
+          <div class="swiper-slide proy1">
+            <img src="./pics/japon-parque.jpg" alt="" />
+            <h3>Proyecto 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quos exercitationem id rerum dolorum et. Repellat,
+              optio. Tenetur, excepturi consectetur.
+            </p>
+            <div class="btn-slide">
+              <button class="btn-sm btn-prime">Visitar</button>
+              <button class="btn-sm btn-hueco">Código</button>
+            </div>
+          </div>
+          <div class="swiper-slide proy1">
+            <img src="./pics/japon-parque.jpg" alt="" />
+            <h3>Proyecto 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quos exercitationem id rerum dolorum et. Repellat,
+              optio. Tenetur, excepturi consectetur.
+            </p>
+            <div class="btn-slide">
+              <button class="btn-sm btn-prime">Visitar</button>
+              <button class="btn-sm btn-hueco">Código</button>
+            </div>
+          </div>
+          <div class="swiper-slide proy1">
+            <img src="./pics/japon-parque.jpg" alt="" />
+            <h3>Proyecto 5</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quos exercitationem id rerum dolorum et. Repellat,
+              optio. Tenetur, excepturi consectetur.
+            </p>
+            <div class="btn-slide">
+              <button class="btn-sm btn-prime">Visitar</button>
+              <button class="btn-sm btn-hueco">Código</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!--CONTACTO FORMULARIO-->
+
+    <section id="contact-form">
+      <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span id="contact-titulo">Escríbeme</span>
+                </div>
+                <div class="app-contact" id="contact-info">
+                  Info: hi@lasfi.to
+                </div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input
+                      class="app-form-control"
+                      placeholder="Luis Adrian"
+                      value=""
+                    />
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="hi@lasfi.to" />
+                  </div>
+
+                  <div class="app-form-group message">
+                    <p>Mensaje</p>
+                    <input class="app-form-control" placeholder="Hi" />
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Scripts-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
