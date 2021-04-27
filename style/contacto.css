@@ -40,7 +40,8 @@
 }
 
 .screen-header-left {
-  margin-right: auto;
+  /* margin-right: auto; */
+  flex: 1 1 auto;
 }
 
 .screen-header-button {
@@ -65,6 +66,7 @@
 
 .screen-header-right {
   display: flex;
+  flex: 1 1 auto;
 }
 
 /* .prueba2 {

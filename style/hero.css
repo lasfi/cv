@@ -32,6 +32,10 @@
   color: var(--textostr);
 }
 
+.hero-copy h1 {
+  max-width: 25ch;
+}
+
 .saludo {
   color: var(--primario);
   font-weight: 300;
