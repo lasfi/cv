@@ -1,11 +1,4 @@
 /* HEROU*/
-
-.hero-wrapper {
-  /* background-color: var(--fondo); */
-  position: relative;
-  height: 100vh;
-}
-
 .fondo-pts {
   background-image: radial-gradient(
       hsla(238, 13%, 53%, 0.87) 1.5px,
@@ -16,10 +9,16 @@
   background-position: 0 0, 40px 40px;
 }
 
+.hero-wrapper {
+  /* background-color: var(--fondo); */
+  position: relative;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
 .hero-up {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .hero-copy {
@@ -53,6 +52,10 @@
   animation: cereal linear 3s infinite;
 }
 
+.hero-wrapper i {
+  z-index: 5;
+}
+
 .fa-chevron-circle-down {
   color: var(--primario);
   font-size: 3.25rem;
@@ -72,6 +75,7 @@
   height: 143px;
   width: 100%;
   background-image: var(--ola);
+  z-index: -1;
 
   animation: ola linear 10s infinite;
 }
