@@ -2,12 +2,14 @@
 
 .acerca {
   background: var(--ola-color);
-  height: auto;
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .container-acerca {
   flex: 0 1 700px;
+  /* max-width: 40%; */
   margin: auto;
   padding: 10px;
 }
@@ -43,12 +45,13 @@
 }
 
 .foto-acerca {
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .foto-acerca img {
-  width: 33%;
+  height: 150px;
+  width: auto;
 }
 .botones {
   display: flex;
