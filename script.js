@@ -2,17 +2,16 @@
 
 let btnIdioma = document.getElementById("btn-idioma");
 let btnTema = document.getElementById("btn-tema");
-let idiomaActual = "español";
+// let idiomaActual = "español";
 let idioma = 0; // 0 para espanol y 1 para ingles;
-let temaActual = "claro";
+let temaActual = 0; //0 para claro y 1 para oscuro;
 let texto = {
-  contacto: ["Contáctame", "Contact me"],
+  contacto: ["Contacto", "Contact"],
   saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
   hook: [
     "Soy desarrollador de páginas y aplicaciones web",
     "I am a front-end web & app developer",
   ],
-  acerca: ["Wenas noshes", "Good night"],
 };
 
 const getLanguage = () =>
@@ -31,55 +30,47 @@ if (idiomaUsuario === "en") {
 }
 
 //sticky header mostrar
-window.addEventListener("scroll", () => {
-  let header = document.querySelector("header");
-  header.classList.remove("invisible", window.scrollY > 50);
-});
+// window.addEventListener("scroll", () => {
+//   let header = document.querySelector("header");
+//   header.classList.remove("invisible", window.scrollY > 50);
+// });
 
 //idioma
 btnIdioma.addEventListener("click", () => {
-  if (idioma == 0) {
-    tradEng();
-  } else if (idioma == 1) {
-    tradEsp();
-  }
+  idioma === 0 ? tradEng() : tradEsp();
 });
 
 //tema
 btnTema.addEventListener("click", () => {
-  temaActual == "claro" ? oscurecer() : aclarar();
+  temaActual == 0 ? oscurecer() : aclarar();
 });
 
 function oscurecer() {
   btnTema.textContent = "🌞";
-  temaActual = "oscuro";
+  temaActual = 1;
   document.body.classList.toggle("oscuro");
 }
 
 function aclarar() {
   btnTema.textContent = "🌙";
-  temaActual = "claro";
+  temaActual = 0;
   document.body.classList.toggle("oscuro");
 }
 
 function tradEsp() {
+  btnIdioma.textContent = "[eng]";
+  idioma = 0;
   let keys = Object.keys(texto);
-  console.log("leer keys del objeto", keys);
   keys.forEach((codigo) => {
     document.getElementById(codigo).textContent = texto[codigo][0];
   });
-
-  btnIdioma.textContent = "🌮";
-  idioma = 0;
 }
 
 function tradEng() {
+  btnIdioma.textContent = "[esp]";
+  idioma = 1;
   let keys = Object.keys(texto);
-  console.log("leer keys del objeto", keys);
   keys.forEach((codigo) => {
     document.getElementById(codigo).textContent = texto[codigo][1];
   });
-
-  btnIdioma.textContent = "🍔";
-  idioma = 1;
 }

@@ -56,7 +56,7 @@ html {
   --sombras: rgba(0, 0, 0, 0.4);
   --trans: 1s;
 
-  scroll-padding-top: 2.5rem;
+  scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
 

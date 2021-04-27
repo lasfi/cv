@@ -1,48 +1,48 @@
 /* Header */
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 50px;
-    transition: var(--trans);
-    z-index: 9;
-    background: var(--fondo);
-    border-bottom: 1px solid var(--textostr);
-  }
-  
-  header > .logo {
-    font-weight: bold;
-    color: var(--textostr);
-    text-decoration: none;
-    font-size: 2rem;
-    letter-spacing: 2px;
-  }
-  
-  * > ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header > ul > li {
-    margin: 0px 10px;
-    cursor: pointer;
-    font-size: 1.25rem;
-  }
-  
-  header > ul > li > a {
-    text-decoration: none;
-    color: var(--textostr);
-    letter-spacing: 1px;
-  }
-  
-  header.invisible {
-    visibility: hidden;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  transition: var(--trans);
+  z-index: 9;
+  background: var(--fondo);
+  border-bottom: 1px solid var(--textostr);
+}
+
+header > .logo {
+  font-weight: bold;
+  color: var(--textostr);
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+* > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+header > ul > li {
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--textostr);
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  color: var(--textostr);
+  letter-spacing: 1px;
+}
+
+header.invisible {
+  visibility: hidden;
+}

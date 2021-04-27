@@ -92,7 +92,7 @@
     display: none;
   }
   header {
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
 
   header > .logo {
@@ -107,6 +107,22 @@
   .swiper-container {
     height: auto;
   }
+  .hero-copy {
+    width: 80%;
+  }
+
+  .hero-foto {
+    width: 75%;
+  }
+
+  /* 
+  CAMBIAR IMAGEN */
+  /* .hero-olas {
+   
+    height: 143px;
+    width: 100%;
+   
+  } */
 }
 
 @media screen and (max-width: 568px) {
@@ -117,7 +133,7 @@
     display: none;
   }
   header {
-    padding: 7px 5px;
+    padding: 0px 5px;
   }
 
   header > .logo {
