@@ -27,9 +27,8 @@ h2#proyectos {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   display: flex;
+  /* min-height: 80vh; */
 }
 
 .swiper-slide img {
@@ -115,3 +114,153 @@ body.oscuro .swiper-pagination * {
 /* body.oscuro .swiper-button-next {
   color: var(--textosft);
 } */
+
+/* 
+NUEVA PANTALLA */
+
+.container-pantalla {
+  flex: 0 1 900px;
+  margin: auto;
+  padding: 10px;
+  cursor: grab;
+}
+
+.pantalla {
+  position: relative;
+  background: var(--fondojr);
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.pantalla:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.cuerpo-pantalla {
+  display: flex;
+}
+
+.columna-carta-der {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.columna-carta-der p {
+  color: var(--textosft);
+}
+
+.columna-carta-der h3 {
+  color: var(--textostr);
+}
+
+.columna-carta-izq {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.columna-carta-izq img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecera-pantalla {
+  display: flex;
+  align-items: space-between;
+  padding: 10px 20px;
+  background: var(--primario);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.cabecera-izq {
+  /* margin-right: auto; */
+  flex: 0 1 auto;
+}
+
+.cabecera-der {
+  flex: 0 1 auto;
+  display: flex;
+}
+
+.cabecera-centro {
+  flex: 10 1 auto;
+  display: flex;
+  justify-content: center;
+  color: var(--fondo);
+}
+
+.boton-pantalla {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  /* margin-right: 3px; */
+  border-radius: 8px;
+}
+
+.boton-pantalla.close {
+  background: #ed1c6f;
+}
+
+.boton-pantalla.maximize {
+  background: #e8e925;
+}
+
+.boton-pantalla.minimize {
+  background: #74c54f;
+}
+
+.ellipsis {
+  width: 3px;
+  height: 3px;
+  margin: auto;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 4px;
+  background: var(--textostr);
+  display: inline-block;
+}
+
+.btn-proyectos {
+  font-size: 1rem;
+
+  box-sizing: border-box;
+  max-width: 40%;
+  border: none;
+  background: none;
+  color: var(--textostr);
+  border-radius: 4px;
+}
+
+.btn-proyectos:hover {
+  transform: translateY(-15%);
+}
+
+.btn-prime:hover {
+  background: var(--hover);
+}
+
+.btn-prime {
+  background: var(--boton);
+  color: white;
+}
+
+.btn-secu {
+  border: 1px solid var(--hermano);
+}

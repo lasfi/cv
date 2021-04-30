@@ -25,7 +25,7 @@
     ></script>
   </head>
   <body class="fondo-pts">
-    <header>
+    <header class='glass'>
       <a href="#" class="logo">Lasfi.to</a>
       <ul>
         <li id="btn-tema">🌙</li>
@@ -36,8 +36,8 @@
       </ul>
     </header>
     <section class="hero-wrapper">
-      <section class="hero-up">
-        <section class="hero-copy glass">
+      <section class="hero-up" id='top'>
+        <section class="hero-copy ">
           <h3 id="saludo" class="saludo">¡Hola, me dicen lasfito!</h3>
           <h1 id="hook">
             Soy <strong>desarrollador</strong> de páginas y aplicaciones
@@ -94,22 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="glass">
-        <div class="foto-acerca">
-          <img src="./pics/luisMugShot.png" alt="This is me, Lasfito!"  />
-        </div>
-        <div class="info">
-          <i class="fas fa-quote-left"></i> Desarrollador web con
-          experiencia de 1 año en front-end y UI. <em>Tech stack:</em>
-          <strong>HTML, CSS, JavaScript.</strong>
-          <i class="fas fa-quote-right"></i>
-          <p>-Fuente: creánme</p>
-        </div>
-        <div class="botones">
-          <button><a href="#proyectos"> Proyectos</a></button
-          ><button>Ver CV</button>
-        </div>
-      </div>
+      
     </div>
     <div class="ola-abajo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
@@ -130,171 +115,152 @@
 
     <section class="swiper-container">
       <div class="swiper-wrapper">
+        
         <!--proyecto 1 -->
+    
         <div class="swiper-slide">
-          <div class="container-proyectos">
-            <div class="screen-proyectos">
-              <div class="screen-header">
-                <div class="screen-header-left">
-                  <div class="screen-header-button close"></div>
-                  <div class="screen-header-button maximize"></div>
-                  <div class="screen-header-button minimize"></div>
+          <div class="container-pantalla">
+            <div class="pantalla">
+              <div class="cabecera-pantalla">
+                <div class="cabecer-izq">
+                  <div class="boton-pantalla close"></div>
+                  <div class="boton-pantalla maximize"></div>
+                  <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="screen-header-center">Proyecto 1</div>
-                <div class="screen-header-right">
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
+                <div class="cabecera-centro">Proyecto 1</div>
+                <div class="cabecera-der">
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
                 </div>
               </div>
-              <div class="screen-body-proyectos">
-                <div class="screen-body-item-jr">
-                  <img src="./pics/lasfiNieve.jpg"  />
+              <div class="cuerpo-pantalla">
+                <div class="columna-carta-izq">
+                  <img src="./pics/mockupcell.png" alt="">
                 </div>
-
-                <div class="screen-body-item">
-                  <h3>Proyecto 1</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Numquam quos repudiandae illum odit tenetur quis eum
-                    temporibus architecto est possimus necessitatibus blanditiis
-                    consectetur, laboriosam voluptates!
-                  </p>
-                  <div class="grupo-btns">
-                    <button>Visitar</button><button>Código</button>
-                  </div>
+                <div class="columna-carta-der">
+                  <h3>Bankist</h3>
+                  <div> <p>
+                  Simulador básico de aplicación bancaria con  <strong>login y transferencias</strong>. Construida con HTML, CSS y JavaScript. Distribuido por Netlify.
+                </p></div>
+                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
                 </div>
+                
               </div>
             </div>
           </div>
         </div>
+
         <!--proyecto 2 -->
+
         <div class="swiper-slide">
-          <div class="container-proyectos">
-            <div class="screen">
-              <div class="screen-header">
-                <div class="screen-header-left">
-                  <div class="screen-header-button close"></div>
-                  <div class="screen-header-button maximize"></div>
-                  <div class="screen-header-button minimize"></div>
+          <div class="container-pantalla">
+            <div class="pantalla">
+              <div class="cabecera-pantalla">
+                <div class="cabecer-izq">
+                  <div class="boton-pantalla close"></div>
+                  <div class="boton-pantalla maximize"></div>
+                  <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="screen-header-right">
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
+                <div class="cabecera-centro">Proyecto 2</div>
+                <div class="cabecera-der">
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
                 </div>
               </div>
-              <div class="screen-body">
-                <div class="screen-body-item left">
-                  <div class="app-title">
-                    <span id="contact-titulo">Escríbeme</span>
-                  </div>
-                  <div class="app-contact" id="contact-info">
-                    Info: hi@lasfi.to
-                  </div>
+              <div class="cuerpo-pantalla">
+                <div class="columna-carta-izq">
+                  <img src="./pics/mockupcell.png" alt="">
                 </div>
-                <div class="screen-body-item">
-                  <div class="app-form">
-                    <div class="app-form-group">
-                      <input
-                        class="app-form-control"
-                        placeholder="Luis Adrian"
-                        value=""
-                      />
-                    </div>
-                    <div class="app-form-group">
-                      <input
-                        class="app-form-control"
-                        placeholder="hola@lasfi.to"
-                      />
-                    </div>
-
-                    <div class="app-form-group message">
-                      <p>Mensaje</p>
-                      <input class="app-form-control" placeholder="Hi" />
-                    </div>
-                    <div class="app-form-group buttons">
-                      <button class="app-form-button">enviar</button>
-                    </div>
-                  </div>
+                <div class="columna-carta-der">
+                  <h3>Bankist</h3>
+                  <div> <p>
+                  Simulador básico de aplicación bancaria con  <strong>login y transferencias</strong>. Construida con HTML, CSS y JavaScript. Distribuido por Netlify.
+                </p></div>
+                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
                 </div>
+                
               </div>
             </div>
           </div>
         </div>
+
+
         <!--proyecto 3 -->
+
         <div class="swiper-slide">
-          <div class="container-proyectos">
-            <div class="screen-proyectos">
-              <div class="screen-header">
-                <div class="screen-header-left">
-                  <div class="screen-header-button close"></div>
-                  <div class="screen-header-button maximize"></div>
-                  <div class="screen-header-button minimize"></div>
+          <div class="container-pantalla">
+            <div class="pantalla">
+              <div class="cabecera-pantalla">
+                <div class="cabecer-izq">
+                  <div class="boton-pantalla close"></div>
+                  <div class="boton-pantalla maximize"></div>
+                  <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="screen-header-right">
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
+                <div class="cabecera-centro">Proyecto 3</div>
+                <div class="cabecera-der">
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
                 </div>
               </div>
-              <div class="screen-body-proyectos">
-                <div class="screen-body-item-jr">
-                  <img src="./pics/lasfiNieve.jpg" alt=""  />
+              <div class="cuerpo-pantalla">
+                <div class="columna-carta-izq">
+                  <img src="./pics/mockupcell.png" alt="">
                 </div>
-
-                <div class="screen-body-item">
-                  <h3>Proyecto 3</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Numquam quos repudiandae illum odit tenetur quis eum
-                    temporibus architecto est possimus necessitatibus blanditiis
-                    consectetur, laboriosam voluptates!
-                  </p>
-                  <div class="grupo-btns">
-                    <button>Visitar</button><button>Código</button>
-                  </div>
+                <div class="columna-carta-der">
+                  <h3>Bankist</h3>
+                  <div> <p>
+                  Simulador básico de aplicación bancaria con  <strong>login y transferencias</strong>. Construida con HTML, CSS y JavaScript. Distribuido por Netlify.
+                </p></div>
+                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
                 </div>
+                
               </div>
             </div>
           </div>
         </div>
         <!--proyecto 4 -->
+
         <div class="swiper-slide">
-          <div class="container-proyectos">
-            <div class="screen-proyectos">
-              <div class="screen-header">
-                <div class="screen-header-left">
-                  <div class="screen-header-button close"></div>
-                  <div class="screen-header-button maximize"></div>
-                  <div class="screen-header-button minimize"></div>
+          <div class="container-pantalla">
+            <div class="pantalla">
+              <div class="cabecera-pantalla">
+                <div class="cabecer-izq">
+                  <div class="boton-pantalla close"></div>
+                  <div class="boton-pantalla maximize"></div>
+                  <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="screen-header-right">
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
-                  <div class="screen-header-ellipsis"></div>
+                <div class="cabecera-centro">Proyecto 4</div>
+                <div class="cabecera-der">
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
+                  <div class="ellipsis"></div>
                 </div>
               </div>
-              <div class="screen-body-proyectos">
-                <div class="screen-body-item-jr">
-                  <img src="./pics/lasfiNieve.jpg" alt="" />
+              <div class="cuerpo-pantalla">
+                <div class="columna-carta-izq">
+                  <img src="./pics/mockupcell.png" alt="">
                 </div>
-
-                <div class="screen-body-item">
-                  <h3>Proyecto 4</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Numquam quos repudiandae illum odit tenetur quis eum
-                    temporibus architecto est possimus necessitatibus blanditiis
-                    consectetur, laboriosam voluptates!
-                  </p>
-                  <div class="grupo-btns">
-                    <button>Visitar</button><button>Código</button>
-                  </div>
+                <div class="columna-carta-der">
+                  <h3>Bankist</h3>
+                  <div> <p>
+                  Simulador básico de aplicación bancaria con  <strong>login y transferencias</strong>. Construida con HTML, CSS y JavaScript. Distribuido por Netlify.
+                </p></div>
+                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
                 </div>
+                
               </div>
             </div>
           </div>
+        </div>
+      
+
+      
+     
+     
+
         </div>
       </div>
       <!-- Add Pagination -->
@@ -303,7 +269,7 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </section>
-
+ 
     <!--CONTACTO FORMULARIO-->
 
     <div class="background" id="contact-form">
@@ -315,6 +281,7 @@
               <div class="screen-header-button maximize"></div>
               <div class="screen-header-button minimize"></div>
             </div>
+            <div class="cabecera-centro">Contáctame</div>
             <div class="screen-header-right">
               <div class="screen-header-ellipsis"></div>
               <div class="screen-header-ellipsis"></div>
@@ -356,7 +323,11 @@
     </div>
 
     <!--PIE DE PAGINA-->
-    <section class="footer">Hecho con ❤ por Lasfito</section>
+    
+    <section class="footer">
+     
+      <a href="#top"><i class="fas fa-chevron-up"> </i></a>
+      <p>Hecho con ❤ por Lasfito</p></section>
 
     <!--Scripts-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

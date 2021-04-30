@@ -67,6 +67,14 @@
 }
 
 /* mediaqueriessss */
+@media screen and (min-width: 1350px) {
+  .swiper-button-next {
+    margin-right: 150px;
+  }
+  .swiper-button-prev {
+    margin-left: 150px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .hero-up {
@@ -115,6 +123,23 @@
     width: 75%;
   }
 
+  .cuerpo-pantalla {
+    flex-direction: column;
+  }
+
+  .columna-carta-der {
+    padding: 10px 35px;
+    margin: 10px 0;
+  }
+
+  .columna-carta-izq {
+    padding: 5px 15px;
+  }
+
+  .columna-carta-izq img {
+    width: 50%;
+  }
+
   /* 
   CAMBIAR IMAGEN */
   /* .hero-olas {
@@ -139,6 +164,10 @@
   header > .logo {
     font-size: 1.5rem;
     letter-spacing: 1.5px;
+  }
+
+  .columna-carta-izq img {
+    width: 75%;
   }
 }
 
