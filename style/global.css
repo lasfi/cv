@@ -51,7 +51,7 @@ html {
 
   /* misc */
   --ola: url(../pics/oladay.png);
-  /* --ola-color: # */
+  --scrollbar: hsl(205, 21%, 17%);
   --ola-color: var(--hermano);
   --sombras: rgba(0, 0, 0, 0.4);
   --boton: hsl(359, 59%, 64%);
@@ -78,6 +78,7 @@ body.oscuro {
   --textostr: hsl(0, 0%, 95%);
   --textosft: hsl(0, 0%, 85%);
 
+  --scrollbar: var(--hermano);
   --ola: url("../pics/olanight.png");
   --sombras: rgba(0, 0, 0, 0.678);
   --ola-color: #cbd5f6;
@@ -151,4 +152,18 @@ p {
 .footer i:hover {
   transform: translateY(-15%);
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background: var(--ola-color);
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acento);
 }

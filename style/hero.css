@@ -50,6 +50,7 @@
 
 .hero-foto img {
   animation: cereal linear 3s infinite;
+  filter: drop-shadow(25px 25px 25px var(--sombras));
 }
 
 .hero-wrapper i {
