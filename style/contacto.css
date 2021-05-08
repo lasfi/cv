@@ -33,6 +33,7 @@ span.prevcon {
   letter-spacing: 1px;
   font-size: 1.5rem;
   margin-left: 0.5rem;
+  color: var(--textostr);
 
   /* width: 85px;
   margin: 16px 0 0; */
@@ -50,7 +51,7 @@ label.prevcon {
   transition: 0.3s ease;
 }
 input.prevcon[type="checkbox"]:checked + label {
-  background: var(--ola-color);
+  background: var(--check1);
 }
 
 /* bolita al interior */
@@ -66,6 +67,7 @@ label.prevcon:before {
   box-sizing: border-box;
   border: 2px solid var(--primario);
   color: black;
+  background-color: var(--check1);
   border-radius: 100px;
   /* display: flex;
   align-items: center;
@@ -75,6 +77,7 @@ label.prevcon:before {
 
 input.prevcon[type="checkbox"]:checked + label:before {
   left: 50px;
+  background-color: var(--check2);
 }
 
 /* CONTACTO */

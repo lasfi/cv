@@ -57,6 +57,8 @@ html {
   --boton: hsl(359, 59%, 64%);
   --hover: var(--textostr);
   --trans: 1s;
+  --check1: var(--hermano);
+  --check2: var(--fondojr);
 
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
@@ -83,6 +85,8 @@ body.oscuro {
   --sombras: rgba(0, 0, 0, 0.678);
   --ola-color: #cbd5f6;
   --hover: var(--hermano);
+  --check1: var(--ola-color);
+  --check2: var(--hermano);
 }
 
 body.oscuro img {
