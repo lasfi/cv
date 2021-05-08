@@ -74,3 +74,32 @@ function tradEng() {
     document.getElementById(codigo).textContent = texto[codigo][1];
   });
 }
+
+// checboxes locochones
+let contadorCheck = 0;
+let truesAhora = 0;
+
+let checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+
+checkBoxes.forEach((checkbox) =>
+  checkbox.addEventListener("change", function (e) {
+    checarTrues();
+    contadorCheck = truesAhora;
+    truesAhora = 0;
+    // console.log(contadorCheck);
+    if (contadorCheck == 3) {
+      let copiaBoxes = Array.from(checkBoxes);
+      let index = copiaBoxes.indexOf(e.target);
+      copiaBoxes.splice(index, 1);
+
+      let random = Math.trunc(Math.random() * 2);
+      let desactivar = copiaBoxes[random];
+
+      document.getElementById(desactivar.id).checked = false;
+    }
+  })
+);
+
+function checarTrues() {
+  checkBoxes.forEach((checkbox) => checkbox.checked && truesAhora++);
+}
