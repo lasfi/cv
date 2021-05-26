@@ -264,3 +264,9 @@ NUEVA PANTALLA */
 .btn-secu {
   border: 1px solid var(--hermano);
 }
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+}
+

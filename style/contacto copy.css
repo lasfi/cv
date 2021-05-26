@@ -14,26 +14,25 @@ input.prevcon {
 }
 
 .wrap-contacto {
-  width: 100px;
-  margin-top: 2rem;
+  width: 200px;
 
-  padding: 15px 15px 3px;
+  padding: 30px 30px 5px;
   display: flex;
   flex-direction: column;
 }
 .block-contacto {
-  width: 100px;
+  width: 200px;
   position: relative;
   /* clear: both; */
-  margin: 0 0 12px;
+  margin: 0 0 25px;
   /* float: left; */
   display: flex;
   align-items: center;
 }
 span.prevcon {
-  letter-spacing: 0.5px;
-  font-size: 1rem;
-  margin-left: 0.25rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
   color: var(--textostr);
 
   /* width: 85px;
@@ -41,12 +40,12 @@ span.prevcon {
 }
 
 label.prevcon {
-  width: 50px;
-  height: 25px;
+  width: 100px;
+  height: 50px;
   box-sizing: border-box;
-  border: 1.5px solid var(--primario);
+  border: 2px solid var(--primario);
   /* float: left; */
-  border-radius: 50px;
+  border-radius: 100px;
   position: relative;
   cursor: pointer;
   transition: 0.3s ease;
@@ -59,17 +58,17 @@ input.prevcon[type="checkbox"]:checked + label {
 label.prevcon:before {
   transition: 0.3s ease;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   background: white;
-  left: 1px;
-  top: 1px;
+  left: 2px;
+  top: 2px;
   box-sizing: border-box;
-  border: 1.5px solid var(--primario);
+  border: 2px solid var(--primario);
   color: black;
   background-color: var(--check1);
-  border-radius: 50px;
+  border-radius: 100px;
   /* display: flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +76,7 @@ label.prevcon:before {
 }
 
 input.prevcon[type="checkbox"]:checked + label:before {
-  left: 25px;
+  left: 50px;
   background-color: var(--check2);
 }
 
@@ -176,7 +175,6 @@ input.prevcon[type="checkbox"]:checked + label:before {
 .screen-body-item.left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .app-title {
@@ -250,10 +248,4 @@ input.prevcon[type="checkbox"]:checked + label:before {
 
 .app-form-button:hover {
   color: white;
-}
-
-@media screen and (max-width: 520px) {
-  #contact-info {
-    display: none;
-  }
 }
