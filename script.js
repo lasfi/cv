@@ -6,12 +6,48 @@ let btnTema = document.getElementById("btn-tema");
 let idioma = 0; // 0 para espanol y 1 para ingles;
 let temaActual = 0; //0 para claro y 1 para oscuro;
 let texto = {
-  contacto: ["Contacto", "Contact"],
-  saludo: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
-  hook: [
+  js01: ["Contacto", " Contact "],
+  js02: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
+  js03: [
     "Soy desarrollador de páginas y aplicaciones web",
     "I am a front-end web & app developer",
   ],
+  js04: ["Acerca de mí", "About me"],
+  js05: [
+    "Desarrollador web con experiencia de 1 año en front-end y UI",
+    "Web developer with 1 year experience in front-end and UI",
+  ],
+  js06: ["-Fuente: creánme", "-Source: trust me"],
+  js07: ["Proyectos", "Proyects"],
+  js08: ["Ver CV", "Download CV"],
+  proyectos: ["Proyectos", "Proyects"],
+  js09: ["Proyecto 1", "Proyect 1"],
+  js10: [
+    "Sitio web para agencia digital con blog, optimización SEO y PWA.",
+    "Digital angency's website with blog, SEO and PWA optimization.",
+  ],
+  js11: ["Construido con Gatsby.js", "Built with Gatsby.js"],
+  js12: ["Estilos con SASS", "Styling by SASS"],
+  js13: ["Distribuido por Netlify", "Deployed on Netlify"],
+  js14: ["Ver en vivo", "See live"],
+  js15: ["Ver código", "Code repo"],
+  js16: ["Proyecto 2", "Proyect 2"],
+  js17: [
+    "Simulador de aplicación bancaria con autenticación, divisas, depósitos y transferencias.",
+    "Banking application simulator with authentication, currencies, deposits and transfers.",
+  ],
+  js18: ["Construido con <strong>JavaScript</strong>", "Built with JavaScript"],
+  js19: ["Autenticación por <strong>Firebase", "Firebase authentication"],
+  js20: ["Distribuido por <strong>Firebase</strong>"],
+  js21: ["Ver en vivo", "See live"],
+  js22: ["Ver código", "Code repo"],
+  js23: ["¿Quieres trabajar conmigo?", "Do you want to work with me?"],
+  js24: ["Elije modalidad", "Choose options"],
+  js25: ["Mensaje", "Message"],
+  js26: ["Enviar", "Send"],
+  js27: ["Barato", "Cheap"],
+  js28: ["Rápido", "Fast"],
+  js29: ["Bueno", "Good"],
 };
 
 const getLanguage = () =>
@@ -62,7 +98,7 @@ function tradEsp() {
   idioma = 0;
   let keys = Object.keys(texto);
   keys.forEach((codigo) => {
-    document.getElementById(codigo).textContent = texto[codigo][0];
+    document.getElementById(codigo).innerText = texto[codigo][0];
   });
 }
 

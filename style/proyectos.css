@@ -241,7 +241,7 @@ NUEVA PANTALLA */
   font-size: 1rem;
 
   box-sizing: border-box;
-  max-width: 40%;
+  /* max-width: 40%; */
   border: none;
   background: none;
   color: var(--textostr);
@@ -261,6 +261,16 @@ NUEVA PANTALLA */
   color: white;
 }
 
+.btn-prime a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secu a {
+  text-decoration: none;
+  color: var(--textostr);
+}
+
 .btn-secu {
   border: 1px solid var(--hermano);
 }
@@ -269,4 +279,3 @@ NUEVA PANTALLA */
   display: flex;
   flex-direction: column;
 }
-

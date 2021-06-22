@@ -31,15 +31,15 @@
         <li id="btn-tema">🌙</li>
         <li id="btn-idioma">[eng]</li>
         <li></li>
-        <li><a id="btn-cv" href="./material/cvesp.pdf">CV</a></li>
-        <li><a id="contacto" href="#contact-form">Contáctame</a></li>
+        <li><a id="btn-cv" href="./material/cvesp.pdf" download="true">CV</a></li>
+        <li><a id="js01" href="#contact-form">Contáctame</a></li>
       </ul>
     </header>
     <section class="hero-wrapper">
       <section class="hero-up" id='top'>
         <section class="hero-copy ">
-          <h3 id="saludo" class="saludo">¡Hola, me dicen lasfito!</h3>
-          <h1 id="hook">
+          <h3 id="js02" class="saludo">¡Hola, me dicen lasfito!</h3>
+          <h1 id="js03">
             Soy <strong>desarrollador</strong> de páginas y aplicaciones
             <strong>web</strong>
           </h1>
@@ -69,7 +69,7 @@
               <div class="screen-header-button maximize"></div>
               <div class="screen-header-button minimize"></div>
             </div>
-            <div class="screen-header-center">Acerca de mí</div>
+            <div class="screen-header-center" id="js04">Acerca de mí</div>
             <div class="screen-header-right">
               <div class="screen-header-ellipsis"></div>
               <div class="screen-header-ellipsis"></div>
@@ -81,15 +81,16 @@
               <img src="./pics/luisMugShot.png" alt="This is me, Lasfito!"  />
             </div>
             <div class="info">
-              <i class="fas fa-quote-left"></i> Desarrollador web con
-              experiencia de 1 año en front-end y UI. <em>Tech stack:</em>
-              <strong>HTML, CSS, JavaScript.</strong>
+              <i class="fas fa-quote-left"></i> <p><span id="js05" >Desarrollador web con
+              experiencia de 1 año en front-end y UI</span>. <em >Tech stack:</em>
+              <strong>HTML, CSS, JavaScript.</strong></p>
               <i class="fas fa-quote-right"></i>
-              <p>-Fuente: creánme</p>
+              <p id="js06">-Fuente: creánme</p>
             </div>
             <div class="botones">
-              <button><a href="#proyectos"> Proyectos</a></button
-              ><button>Ver CV</button>
+              <a href="#proyectos"  ><button class="btn-proyectos btn-prime" id="js07"> Proyectos</button
+              ></a>
+              <a href="./material/cvesp.pdf" download="true" ><button class="btn-proyectos btn-secu" id="js08" >Descargar CV</button></a>
             </div>
           </div>
         </div>
@@ -127,7 +128,7 @@
                   <div class="boton-pantalla maximize"></div>
                   <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="cabecera-centro">Proyecto 1</div>
+                <div class="cabecera-centro"  id="js09">Proyecto 1</div>
                 <div class="cabecera-der">
                   <div class="ellipsis"></div>
                   <div class="ellipsis"></div>
@@ -139,19 +140,22 @@
                   <img src="./pics/webmedia.png" alt="">
                 </div>
                 <div class="columna-carta-der">
-                  <h3>Refam.Studio</h3>
+                  <h3>Lasfi Studio</h3>
                   <div> 
-                    <p class='descripcion'> Sitio web para agencia digital con blog, optimización SEO y PWA.
+                    <p class='descripcion' id="js10"> Sitio web para agencia digital con blog, optimización SEO y PWA.
                     
                     </p>
                   
                   <ol>
-                    <li>Construido con <strong>Gatsby.js</strong></li>
-                    <li>Estilos con <strong>SASS </strong></li>
-                    <li>Distribuido por <strong>Netlify</strong></li>
+                    <li id="js11">Construido con <strong>Gatsby.js</strong></li>
+                    <li id="js12" >Estilos con <strong>SASS </strong></li>
+                    <li id="js13" >Distribuido por <strong>Netlify</strong></li>
                   </ol>.
                </div>
-                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
+                  <div class="botones-gpo">
+                    <a href="https://lasfi.com" target="blank" ><button class='btn-proyectos btn-prime' id="js14" >Ver en vivo</button></a>
+                    <a href="https://github.com/lasfi/studio" target="blank" ><button class='btn-proyectos btn-secu' id="js15"  >Ver código</button></a>
+                  </div>
                 </div>
                 
               </div>
@@ -170,7 +174,7 @@
                   <div class="boton-pantalla maximize"></div>
                   <div class="boton-pantalla minimize"></div>
                 </div>
-                <div class="cabecera-centro">Proyecto 2</div>
+                <div class="cabecera-centro" id="js16">Proyecto 2</div>
                 <div class="cabecera-der">
                   <div class="ellipsis"></div>
                   <div class="ellipsis"></div>
@@ -184,16 +188,16 @@
                 <div class="columna-carta-der">
                   <h3>LasfiBank</h3>
                   <div> 
-                    <p class='descripcion'> Simulador de aplicación bancaria con autenticación, divisas, depósitos y transferencias.
+                    <p class='descripcion' id="js17"> Simulador de aplicación bancaria con autenticación, divisas, depósitos y transferencias.
                     </p>
                   
                   <ol>
-                    <li>Construido con <strong>JavaScript</strong></li>
-                    <li>Autenticación por <strong>Firebase </strong></li>
-                    <li>Distribuido por <strong>Firebase</strong></li>
+                    <li id="js18">Construido con <strong>JavaScript</strong></li>
+                    <li id="js19" >Autenticación por <strong>Firebase </strong></li>
+                    <li id="js20">Distribuido por <strong>Firebase</strong></li>
                   </ol>.
                </div>
-                  <div class="botones-gpo"><button class='btn-proyectos btn-prime'>Ver en vivo</button><button class='btn-proyectos btn-secu' >Ver código</button></div>
+                  <div class="botones-gpo"><button class='btn-proyectos btn-prime' id="js21">Ver en vivo</button><button class='btn-proyectos btn-secu' id="js22" >Ver código</button></div>
                 </div>
                 
               </div>
@@ -251,7 +255,7 @@
               <div class="screen-header-button maximize"></div>
               <div class="screen-header-button minimize"></div>
             </div>
-            <div class="cabecera-centro">¿Quieres trabajar conmigo?</div>
+            <div class="cabecera-centro" id="js23">¿Quieres trabajar conmigo?</div>
             <div class="screen-header-right">
               <div class="screen-header-ellipsis"></div>
               <div class="screen-header-ellipsis"></div>
@@ -261,7 +265,7 @@
           <div class="screen-body">
             <div class="screen-body-item left">
               <div class="app-title">
-                <span id="contact-titulo">Elije modalidad</span>
+                <span id="contact-titulo"id="js24">Elije modalidad</span>
               </div>
               <!--troll-->
               <div class="wrap-contacto">
@@ -269,19 +273,19 @@
                 <div class="block-contacto">
                  <input data-index="0" id="cheap" type="checkbox"  class="prevcon"/>
                   <label for="cheap" class="prevcon">    </label>
-                  <span class="prevcon">Barato</span>
+                  <span class="prevcon" id="js27">Barato</span>
                 </div>
               
                 <div class="block-contacto">    
                   <input data-index="1" id="fast" type="checkbox" class="prevcon"/>
                   <label for="fast" class="prevcon"></label>
-                  <span class="prevcon">Rápido</span>
+                  <span class="prevcon" id="js28">Rápido</span>
                 </div>
               
                 <div class="block-contacto">
                  <input data-index="2" id="quality" type="checkbox" class="prevcon" />
                   <label for="quality" class="prevcon"></label>
-                  <span class="prevcon">Bueno</span>
+                  <span class="prevcon" js="29">Bueno</span>
                 </div>
               </div>
               <!--troll-->
@@ -303,11 +307,11 @@
                 </div>
 
                 <div class="app-form-group message">
-                  <label for='099'>Mensaje</label>
+                  <label for='099' id="js25">Mensaje</label>
                   <input class="app-form-control" placeholder="Hi" id='099'/>
                 </div>
                 <div class="app-form-group buttons">
-                  <button class="app-form-button">enviar</button>
+                  <button class="app-form-button" id="js26">enviar</button>
                 </div>
               </div> 
             </form>
