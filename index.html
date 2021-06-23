@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -292,7 +292,7 @@
               <div class="app-contact" id="contact-info">Info: hola@lasfi.to</div>
             </div>
             <div class="screen-body-item">
-<form data-netlify="true" name='contacto' autocomplete="on" method="POST" target="_blank" >
+<form data-netlify="true" name='contacto' autocomplete="on" method="POST" >
               <div class="app-form">
                 <div class="app-form-group">
                   <input
@@ -300,15 +300,16 @@
                     class="app-form-control"
                     placeholder="Luis Adrian"
                     value=""
+                    name="nombre"
                   />
                 </div>
                 <div class="app-form-group">
-                  <input type="email" class="app-form-control" placeholder="hola@lasfi.to" />
+                  <input type="email" class="app-form-control" placeholder="hola@lasfi.to" name="correo" />
                 </div>
 
                 <div class="app-form-group message">
                   <label for='099' id="js25">Mensaje</label>
-                  <input class="app-form-control" placeholder="Hi" id='099'/>
+                  <input class="app-form-control" placeholder="Hi" id='099' name="mensaje"/>
                 </div>
                 <div class="app-form-group buttons">
                   <button class="btn-proyectos btn-prime" id="js26">enviar</button>
