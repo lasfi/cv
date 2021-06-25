@@ -16,6 +16,11 @@
   margin-top: 3rem;
 }
 
+body.gracias {
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: hidden;
+}
 .hero-up {
   display: flex;
   align-items: center;
@@ -62,6 +67,18 @@
   font-size: 3.25rem;
   animation: icono linear 3s infinite;
   z-index: 2;
+}
+
+.fa-home {
+  color: var(--primario);
+  font-size: 3.25rem;
+  animation: icono linear 3s infinite;
+  z-index: 2;
+}
+
+.fa-home:hover {
+  color: var(--acento);
+  animation: none;
 }
 
 .fa-chevron-circle-down:hover {

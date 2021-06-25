@@ -228,3 +228,13 @@ Contacto */
     transform: translateZ(0);
   }
 }
+
+@media (max-width: 768px) {
+  .wrap-contacto {
+    display: none;
+  }
+
+  #js24 {
+    display: none;
+  }
+}

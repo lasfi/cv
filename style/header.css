@@ -10,10 +10,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
-  transition: var(--trans);
+  /* transition: var(--trans); */
   z-index: 9;
-  /* background: var(--fondo);
-  border-bottom: 1px solid var(--textostr); */
 
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -55,4 +53,11 @@ header > ul > li > a {
 
 header.invisible {
   visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  header > * {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

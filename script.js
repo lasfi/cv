@@ -31,7 +31,7 @@ let texto = {
   js13: ["Distribuido por Netlify", "Deployed on Netlify"],
   js14: ["Ver en vivo", "See live"],
   js15: ["Ver código", "Code repo"],
-  js166: ["Proyecto 2", "Proyect 2"],
+  js166: ["Proyecto 3", "Proyect 3"],
   js17: [
     "Simulador de aplicación bancaria con autenticación, divisas, depósitos y transferencias.",
     "Banking application simulator with authentication, currencies, deposits and transfers.",

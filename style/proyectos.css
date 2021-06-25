@@ -279,3 +279,12 @@ NUEVA PANTALLA */
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .botones-gpo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
