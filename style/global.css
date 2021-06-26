@@ -51,7 +51,7 @@ html {
 
   /* misc */
   --ola: url(../pics/oladay.png);
-  --ola-jr: url(../pics/oladay.png);
+
   --scrollbar: hsl(205, 21%, 17%);
   --ola-color: var(--hermano);
   --sombras: rgba(0, 0, 0, 0.4);

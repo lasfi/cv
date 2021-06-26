@@ -45,6 +45,16 @@ body.gracias {
   font-weight: 300;
 }
 
+.hero__iconos {
+  color: var(--textosft);
+  margin: 1rem 0;
+}
+
+.hero__iconos * {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--textosft);
+}
 .hero-foto {
   /* flex: 1 1 auto; */
   display: flex;
@@ -67,6 +77,7 @@ body.gracias {
   font-size: 3.25rem;
   animation: icono linear 3s infinite;
   z-index: 2;
+  margin-top: 1rem;
 }
 
 .fa-home {

@@ -159,7 +159,7 @@ NUEVA PANTALLA */
   align-items: center;
 }
 
-.columna-carta-der p {
+.columna-carta-der * {
   color: var(--textosft);
 }
 

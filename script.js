@@ -9,8 +9,8 @@ let texto = {
   js01: ["Contacto", " Contact "],
   js02: ["¡Hola, me dicen lasfito!", "Hi, people call me lasfito!"],
   js03: [
-    "Soy desarrollador de páginas y aplicaciones web",
-    "I am a front-end web & app developer",
+    "Soy desarrollador web front-end",
+    "I am a front-end web developer",
   ],
   js04: ["Acerca de mí", "About me"],
   js05: [
