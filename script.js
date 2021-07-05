@@ -19,7 +19,7 @@ let texto = {
   ],
   js06: ["-Fuente: creánme", "-Source: trust me"],
   js07: ["Proyectos", "Proyects"],
-  js08: ["Ver CV", "Download CV"],
+  js08: ["Ver CV", "See CV"],
   proyectos: ["Proyectos", "Proyects"],
   js09: ["Proyecto 1", "Proyect 1"],
   js10: [
