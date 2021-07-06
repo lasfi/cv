@@ -20,8 +20,6 @@ input.prevcon {
   padding: 15px 15px 3px;
   display: flex;
   flex-direction: column;
-
-  
 }
 .block-contacto {
   width: 100px;
@@ -208,6 +206,7 @@ input.prevcon[type="checkbox"]:checked + label:before {
 
 .app-form-group {
   margin-bottom: 15px;
+  color: var(--textosft);
 }
 
 .app-form-group.message {

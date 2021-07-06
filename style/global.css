@@ -140,7 +140,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: black;
+  background: hsl(205, 21%, 17%);
   color: white;
   height: 15vh;
   align-items: center;
